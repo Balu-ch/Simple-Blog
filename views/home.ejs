@@ -1,4 +1,8 @@
 <%- include("partials/header"); -%>
 <h1>Home</h1>
-<p><%=home %></p>
-<%- include("partials/footer"); -%>
+<p><%=homeEjs %></p>
+
+<% postsEjs.forEach(element => { %>
+<h1><%= element.title%></h1>
+<p><%= element.body%></p>
+<%});%> <%- include("partials/footer"); -%>
